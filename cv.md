@@ -17,7 +17,7 @@ Only git, beginner level only
 Once I was mover
 
 ### Education
-Nothing antwhere
+I have a diploma filosophy department MGU
 
 ### English Language
 DouLingvo is my passion
