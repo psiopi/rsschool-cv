@@ -10,4 +10,76 @@
     --color-tag-green: #06a44f;
     --color-content-background: #ecf3f8;
     --color-overlay: #1c1f29;
+
+    --width-content: 1440px;
+    --width-tablet: 768px;
+    --width-mobile: 380px;
+
+
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("../assets/fonts/Montserrat/Montserrat-VariableFont_wght.ttf");
+    font-weight: 100 900;
+}
+
+@font-face {
+    font-family: "Allura";
+    src: url(../assets/fonts/Allura/Allura-Regular.ttf);
+}
+
+header {
+    background-color: var(--color-tag-green);
+}
+
+h1 {
+    font-family: "Montserrat", Verdana, sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 150%;
+    letter-spacing: 18%;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-family: "Montserrat", Verdana, sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 152%;
+    letter-spacing: 16%;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-family: "Montserrat", Verdana, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 152%;
+    letter-spacing: 8%;
+    text-transform: uppercase;
+}
+
+h4 {
+    font-family: "Montserrat", Verdana, sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 130%;
+    letter-spacing: 5%;
+    text-transform: uppercase;
+}
+
+p {
+    font-family: "Montserrat", Verdana, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 148%;
+}
+
+.caption {
+    font-family: "Allura", Verdana, sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: 5%;
 }
