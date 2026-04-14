@@ -29,8 +29,8 @@
     src: url(../assets/fonts/Allura/Allura-Regular.ttf);
 }
 
-header {
-    background-color: var(--color-tag-green);
+* {
+    box-sizing: border-box;
 }
 
 h1 {
@@ -76,10 +76,148 @@ p {
     line-height: 148%;
 }
 
+.action-large {
+    font-family: "Montserrat", Verdana, sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 152%;
+    letter-spacing: 16%;
+    text-transform: uppercase;
+}
+
+.action-small {
+    font-family: "Montserrat", Verdana, sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 130%;
+    letter-spacing: 5%;
+    text-transform: uppercase;
+}
+
 .caption {
     font-family: "Allura", Verdana, sans-serif;
     font-size: 24px;
     font-weight: 400;
     line-height: 100%;
     letter-spacing: 5%;
+    color: var(--color-static-white);
+}
+
+body {
+    color: var(--color-dark);
+    background-color: var(--color-content-background);
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    background-color: var(--color-primary);
+    border-radius: 14px;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.wrapper {
+    max-width: var(--width-content);
+    margin: 0 auto;
+}
+
+header {
+    margin: 0;
+    padding: 0;
+}
+
+.header__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    padding: 8px 20px;
+}
+
+.logo__img {
+    padding-right: 10px;
+}
+
+.navigation {
+    display: flex;
+}
+
+.navigation__link {
+    list-style: none;
+    cursor: pointer;
+    padding: 12px 20px;
+}
+
+.hero__wrapper {
+    color: var(--color-static-white);
+    text-align: center;
+    background-image: url(../assets/img/bg-ball.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    min-height: 500px;
+}
+
+.hero__content {
+    margin: 0 auto;
+    padding: 100px 0;
+    width: 30%;
+}
+
+.hero__caption {
+    margin: 0;
+    padding: 0;
+}
+
+.button__magical-gifts {
+    width: 235px;
+    height: 56px;
+    border-radius: 14px;
+    color: var(--color-static-white);
+    background-color: var(--color-dark);
+    border: none;
+    transition: 
+        color 0.5s,
+        background-color 0.5s;
+}
+
+.button__magical-gifts:hover {
+    color: var(--color-dark);
+    background-color: var(--color-static-white);
+}
+
+.about__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-static-white);
+    border-radius: 14px;
+    width: 90%;
+    margin: 100px auto 0 auto;
+}
+
+.about__content {
+    padding: 50px;
+    flex-basis: 50%;
+    
+}
+
+.about__caption {
+    color: var(--color-primary);
+}
+
+.about__image {
+    border-radius: 14px;
+    
 }
