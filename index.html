@@ -17,16 +17,16 @@
             <span class="hamburger"></span>
             <nav class="header__navigation">
                 <ul class="navigation">
-                    <li class="navigation__link"><a href="">GIFTS</a></li>
-                    <li class="navigation__link"><a href="">ABOUT</a></li>
-                    <li class="navigation__link"><a href="">BEST</a></li>
-                    <li class="navigation__link"><a href="">CONTACTS</a></li>
+                    <li class="navigation__link"><a href="#hero">GIFTS</a></li>
+                    <li class="navigation__link"><a href="#about">ABOUT</a></li>
+                    <li class="navigation__link"><a href="#best-gifts">BEST</a></li>
+                    <li class="navigation__link"><a href="#contacts">CONTACTS</a></li>
                 </ul>
             </nav>
         </div>
     </header>
     <main>
-        <section class="hero">
+        <section class="hero" id="hero">
             <div class="wrapper hero__wrapper">
                 <div class="hero__content">
                     <p class="hero__caption caption">Marry Cristmas</p>
@@ -36,7 +36,7 @@
                 </div>
             </div>
         </section>
-        <section class="about">
+        <section class="about" id="about">
             <div class="wrapper">
                 <div class="about__wrapper">
                     <div class="about__content">
@@ -52,12 +52,21 @@
             <div class="wrapper">
                 <p class="caption slider__caption">Become Happier!</p>
                 <h2 class="slider__name">IN THE NEW 2025</h2>
-                <div class="slider__place"></div>
+                <div class="slider__place">
+                    <div class="slide slider-text slide1">Live</div>
+                    <div class="slide slide-image slide2"><img src="./assets/img/snowman.png" alt="There is a snowman"></div>
+                    <div class="slide slider-text slide3">Create</div>
+                    <div class="slide slide-image slide4"><img src="./assets/img/christmas-trees.png" alt="There are christmas-trees"></div>
+                    <div class="slide slider-text slide5"><p>Love</p></div>
+                    <div class="slide slide-image slide6"><img src="./assets/img/christmas-tree-ball.png" alt="There is a christmas-tree-ball"></div>
+                    <div class="slide slider-text slide7">Dream</div>
+                    <div class="slide slide-image slide8"><img src="./assets/img/fairytale-house.png" alt="There is a fairytale-house"></div>
+                </div>
                 <botton class="slider__back"></botton>
-                <bottom class="slider__ahead"></bottom>
+                <botton class="slider__ahead"></botton>
             </div>
         </section>
-        <section class="best-gifts">
+        <section class="best-gifts" id="best-gifts">
             <div class="wrapper">
                 <p class="caption best-gifts__caption">Best Gifts</p>
                 <h2 class="best-gifts__name">ESPECIALLY FOR YOU</h2>
@@ -73,7 +82,7 @@
             </div>
         </section>
     </main>
-    <footer class="footer">
+    <footer class="footer" id="contacts">
         <div class="wrapper footer__wrapper">
             <div class="activity">
                 <section class="contact call"></section>
@@ -85,5 +94,6 @@
             <p class="caption footer__caption">Made in Rolling Scopes School</p>
         </div>
     </footer>
+    <script src="./script.js"></script>
 </body>
 </html>

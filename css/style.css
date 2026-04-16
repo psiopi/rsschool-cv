@@ -103,6 +103,14 @@ p {
     color: var(--color-static-white);
 }
 
+.slider-text {
+    font-family: "Montserrat", Verdana, sans-serif;
+    font-size: 80px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--color-static-white);
+}
+
 body {
     color: var(--color-dark);
     background-color: var(--color-content-background);
@@ -219,5 +227,26 @@ header {
 
 .about__image {
     border-radius: 14px;
-    
+}
+
+.slider__place {
+
+}
+
+.slider__place {
+    width: 500px;
+	height: 400px;
+	margin: auto;
+	margin-top: 25px;
+	border: 1px solid black;
+	position: relative;
+	overflow: hidden;
+}
+
+.slide-image {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
 }
