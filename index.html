@@ -53,17 +53,33 @@
                 <p class="caption slider__caption">Become Happier!</p>
                 <h2 class="slider__name">IN THE NEW 2025</h2>
                 <div class="slider__place">
-                    <div class="slide slider-text slide1">Live</div>
-                    <div class="slide slide-image slide2"><img src="./assets/img/snowman.png" alt="There is a snowman"></div>
-                    <div class="slide slider-text slide3">Create</div>
-                    <div class="slide slide-image slide4"><img src="./assets/img/christmas-trees.png" alt="There are christmas-trees"></div>
-                    <div class="slide slider-text slide5"><p>Love</p></div>
-                    <div class="slide slide-image slide6"><img src="./assets/img/christmas-tree-ball.png" alt="There is a christmas-tree-ball"></div>
-                    <div class="slide slider-text slide7">Dream</div>
-                    <div class="slide slide-image slide8"><img src="./assets/img/fairytale-house.png" alt="There is a fairytale-house"></div>
+                    <div id="slider-container" class="slides">
+                        <div class="slide slider-text slide1">Live</div>
+                        <div class="slide slider-image slide2"><img src="./assets/img/snowman.png" alt="There is a snowman"></div>
+                        <div class="slide slider-text slide3">Create</div>
+                        <div class="slide slider-image slide4"><img src="./assets/img/christmas-trees.png" alt="There are christmas-trees"></div>
+                        <div class="slide slider-text slide5">Love</div>
+                        <div class="slide slider-image slide6"><img src="./assets/img/christmas-tree-ball.png" alt="There is a christmas-tree-ball"></div>
+                        <div class="slide slider-text slide7">Dream</div>
+                        <div class="slide slider-image slide8"><img src="./assets/img/fairytale-house.png" alt="There is a fairytale-house"></div>
+                        <div class="slide slider-text slide5">Very</div>
+                        <div class="slide slider-image slide6"><img src="./assets/img/christmas-tree-ball.png" alt="There is a christmas-tree-ball"></div>
+                        <div class="slide slider-text slide7">Opposite</div>
+                        <div class="slide slider-image slide8"><img src="./assets/img/fairytale-house.png" alt="There is a fairytale-house"></div>
+                    </div>
                 </div>
-                <botton class="slider__back"></botton>
-                <botton class="slider__ahead"></botton>
+                <div class="buttons">
+                    <button type="button" class="slider__button move-back" id="btn-left">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18.5 12H6M6 12L12 6M6 12L12 18" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>                        
+                        </svg>
+                    </button>
+                    <button type="button" class="slider__button move-ahead" id="btn-right">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6 12H18.5M18.5 12L12.5 6M18.5 12L12.5 18" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </div>
             </div>
         </section>
         <section class="best-gifts" id="best-gifts">
@@ -89,9 +105,10 @@
                 <section class="contact meet"></section>
                 <section class="contact write"></section>
             </div>
-            <div class="social-media"></div>
+            <div class="social-media">
             <p class="copyright">Copyright 2025, All Rights Reserved</p>
             <p class="caption footer__caption">Made in Rolling Scopes School</p>
+            </div>
         </div>
     </footer>
     <script src="./script.js"></script>
