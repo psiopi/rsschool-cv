@@ -355,13 +355,76 @@ header {
     text-align: center;
 }
 
+.layout-4-columns {
+    display: flex;
+    
+    flex-wrap: wrap;
+    text-align: center;
+    gap: 12px;
+    justify-content: center;
+}
 
+.gift {
+    
+}
 
+.tag-work {
+    color:  var(--color-tag-purple);
+}
 
+.tag-health {
+    color:  var(--color-tag-green);
+}
 
+.tag-harmony {
+    color:  var(--color-tag-pink);
+}
+
+.gift__wrapper {
+    display: flex;
+    flex-direction: column;
+    
+    overflow: hidden;
+    width: 310px;
+    height: 342px;
+    background-color: var(--color-content-background);
+    border-radius: 20px;
+}
+
+.img-gifts {
+    
+    width: auto;
+    height: 230px;
+}
+
+.gift__content {
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-static-white);
+    border-radius: 20px;
+    flex-grow: 1;
+}
+
+.gift__category {
+    padding: 5px 0 0 20px;
+    text-align: left;
+}
+
+.gift__name {
+    padding: 0 0 0 20px;
+    color: var(--color-dark);
+    text-align: left;
+}
 
                                                             /* footer */
 
 footer {
     color: var(--color-dark);
+}
+
+.rs-school-logo {
+    height: auto;
+    border: 3px solid var(--color-dark);
+    border-radius: 40%;
+    rotate: -30deg;
 }
