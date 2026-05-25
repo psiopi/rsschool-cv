@@ -137,6 +137,8 @@ a {
 .wrapper {
     max-width: var(--width-content);
     margin: 0 auto;
+    background-image: url(../assets/img/bg-snow.png);
+    background-size: auto 100%;
 }
 
                                                             /* header */
@@ -188,19 +190,19 @@ header {
 
 .hero__content {
     margin: 0 auto;
-    padding: 100px 0;
-    width: 30%;
+    padding: 80px 0;
+    width: 32%;
 }
 
 .hero__caption {
-    margin: 0;
+    margin: 30px 0 0 0;
     padding: 0;
 }
 
 .button__magical-gifts {
-    width: 235px;
-    height: 56px;
-    border-radius: 14px;
+    padding: 20px 32px;
+    
+    border-radius: 20px;
     color: var(--color-static-white);
     background-color: var(--color-dark);
     border: none;
@@ -352,6 +354,7 @@ header {
                                                             /* .best-gifts */
 
 .best-gifts {
+    margin: 100px auto;
     text-align: center;
 }
 
@@ -415,6 +418,122 @@ header {
     color: var(--color-dark);
     text-align: left;
 }
+
+                                                            /* cta */
+
+.cta {
+    
+}
+
+.cta__content {
+    
+    margin: 100px auto;
+    padding: 180px;
+    text-align: center;
+    background-image: url("../assets/img/bg-forest.png");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100% auto;
+}
+
+.cta__name {
+    margin: 0 auto;
+    padding: 0;
+    margin-bottom: 30px;
+    width: 32%;
+}
+
+.cta__caption {
+    margin: 40px 0 0 0;
+    padding: 0;
+}
+
+.timer {
+
+}
+
+.timer__wrapper {
+    margin: 20px auto 0 auto;
+    padding: 0;
+    
+}
+
+.timer__content {
+    
+    padding: 15px 20px;
+    display: inline-flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 20px;
+    
+}
+
+.timer-cell {
+    width: 80px;
+}
+
+.timer__number {
+    margin: 0 auto;
+    padding: 0;
+}
+
+.timer__signatures {
+    margin: 0 auto;
+    padding: 0;
+}
+
+/*
+.days {
+
+}
+
+#days__number {
+    
+}
+
+#days__signatures {
+    
+}
+
+.hours {
+
+}
+
+#hours__number {
+    
+}
+
+#hours__signatures {
+    
+}
+
+.minutes {
+
+}
+
+#minutes__number {
+    
+}
+
+#minutes__signatures {
+    
+}
+
+.seconds {
+
+}
+
+#seconds__number {
+    
+}
+
+#seconds__signatures {
+    
+}
+*/
+
 
                                                             /* footer */
 

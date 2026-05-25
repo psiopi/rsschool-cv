@@ -101,3 +101,38 @@ btnRight.addEventListener('click', () => {
 });
 
 */
+
+//timer
+const futureNewYearEveDate = new Date(2027, 0, 1);
+
+const days = document.querySelector('#days__number');
+const hours = document.querySelector('#hours__number');
+const minutes = document.querySelector('#minutes__number');
+const seconds = document.querySelector('#seconds__number');
+
+
+function updateTimer() {
+    const thisDay = new Date();
+    const remainingTime = futureNewYearEveDate - thisDay;
+
+    //обнуление после Нового года
+    if (remainingTime <= 0) { 
+        clearInterval(timerId);
+        days.innerHTML = hours.innerHTML = minutes.innerHTML = seconds.innerHTML = "0";
+        return;
+    }
+
+    const remainingDays = Math.floor(remainingTime / (24 * 60* 60 * 1000));
+    const remainingHours = Math.floor((remainingTime / (60 * 60 * 1000)) % 24);
+    const remainingMinutes = Math.floor((remainingTime / (60 * 1000)) % 60);
+    const remainingSeconds = Math.floor((remainingTime / 1000) % 60);
+
+    days.innerHTML = remainingDays;
+    hours.innerHTML = remainingHours;
+    minutes.innerHTML = remainingMinutes;
+    seconds.innerHTML = remainingSeconds;
+    //console.log(`${days.innerHTML}`);
+}
+
+updateTimer();
+const timerId = setInterval(updateTimer, 1000)
