@@ -116,7 +116,7 @@ p {
 
 body {
     color: var(--color-static-white);
-    background-color: var(--color-content-background);
+    background-color: var(--color-static-white);
     max-width: var(--width-content);
     margin: 0 auto;
     padding: 0;
@@ -427,7 +427,7 @@ header {
 
 .cta__content {
     
-    margin: 100px auto;
+    margin: 100px auto 0;
     padding: 180px;
     text-align: center;
     background-image: url("../assets/img/bg-forest.png");
@@ -538,8 +538,44 @@ header {
                                                             /* footer */
 
 footer {
+    margin: 50px auto 0;
     color: var(--color-dark);
 }
+.activity {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+
+}
+
+.contact {
+    background-color: var(--color-content-background);
+    
+    width: 25em;
+    border-radius: 15px;
+    text-align: center;
+    border: 2px solid blue;
+
+}
+
+.footer__activity {
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.title-footer__actitvity {
+    margin: 0;
+    padding: 0;
+}
+/*
+.call
+.meet
+.write
+.social-media
+.copyright */
 
 .rs-school-logo {
     height: auto;
