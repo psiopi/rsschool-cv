@@ -26,16 +26,18 @@
 
 @font-face {
     font-family: "Allura";
-    src: url(../assets/fonts/Allura/Allura-Regular.ttf);
+    src: url("../assets/fonts/Allura/Allura-Regular.ttf");
 }
 
 * {
     box-sizing: border-box;
+  
 }
 
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 100px;
+    /*scroll-padding-top: 100px; */
+    
 }
 
 h1 {
@@ -121,6 +123,7 @@ body {
     background-color: var(--color-static-white);
     margin: 0 auto;
     padding: 0;
+    
 }
 
 main {
@@ -128,16 +131,16 @@ main {
     border-radius: 14px;
     margin: 0;
     padding: 0;
+    
+}
 
-        
+.main__wrapper--snow {
     background-image: url(../assets/img/bg-snow.png);
-
     background-size: contain; /*auto 100%;*/
     background-repeat: repeat-y;
-    margin: 0 auto;
-    
-    height: auto;
 }
+
+
 
 a {
     text-decoration: none;
@@ -160,6 +163,9 @@ header {
 }
 
 .header__wrapper {
+    margin: 0;
+    padding: 0;
+
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -167,6 +173,9 @@ header {
 }
 
 .logo {
+    margin: 0;
+    padding: 0;
+
     display: flex;
     align-items: center;
     padding: 8px 20px;
@@ -186,6 +195,10 @@ header {
     padding: 12px 20px;
 }
 
+.navigation__link_disabled {
+    cursor: default;
+}
+
                                                         /* hero */
 
 .hero {
@@ -198,15 +211,16 @@ header {
     min-height: 500px;
 }
 
-.hero__content {
+.title__contain {
     margin: 0 auto;
-    padding: 80px 0;
+    padding: 60px 0 0 0;
     width: 32%;
+
 }
 
 .hero__caption {
-    margin: 30px 0 0 0;
-    padding: 0;
+    margin: 0;
+    padding:  30px 0 0 0;
 }
 
 .button__magical-gifts {
@@ -363,9 +377,9 @@ header {
 }
 */
 
-                                                            /* .best-gifts */
+                                                            /* .gifts */
 
-.best-gifts {
+.gifts {
     margin: 100px auto;
     text-align: center;
 }
@@ -520,7 +534,7 @@ header {
                                                             /* footer */
 
 footer {
-    margin: 60px auto;
+    margin: 0;
     color: var(--color-dark);
 }
 .footer__activity {
@@ -591,4 +605,54 @@ footer {
     border-radius: 40%;
     rotate: -30deg;
 }
+
+                                                            /* GIFTS page*/
+
+.gifts-page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.gifts-page header {
+    order: 2;
+}
+
+.gifts-page main {
+    order: 1;
+}
+
+.gifts-page footer {
+    order: 3;
+}
+
+
+.main__wrapper--garland {
+    background-image: url(../assets/img/bg-garland.png);
+    background-size: contain; /*auto 100%;*/
+    background-repeat: no-repeat;
+}
+
+.gifts__tags-place {
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    
+}
+
+.tag {
+    padding: 12px 20px;
+}
+
+.gifts__tag_selected {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+}
+
+.gifts__tag_bordered {
+    
+}
+
 

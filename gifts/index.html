@@ -3,94 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../css/normalize.css">
+    <title>Christmas Shop</title>
+    <link rel="stylesheet" href="../css/5555normalize.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="icon" href="../assets/logo-snowflake.svg" type="image/x-icon">
 </head>
-<body>
+<body class="gifts-page">
     <header class="header">
         <div class="wrapper header__wrapper action-small">
-            <a href="./index.html" class="logo">
+            <a href="../index.html" class="logo">
                 <img src="../assets/logo-snowflake.svg" alt="logo" class="logo__img">
                 THE GIFTS
             </a>
             <span class="hamburger"></span>
             <nav class="header__navigation">
                 <ul class="navigation">
-                    <li class="navigation__link"><a href="./gifts/index.html">GIFTS</a></li>
+                    <li class="navigation__link navigation__link_disabled">GIFTS</li>
                     <li class="navigation__link"><a href="#about">ABOUT</a></li>
-                    <li class="navigation__link"><a href="#best-gifts">BEST</a></li>
+                    <li class="navigation__link"><a href="#gifts">BEST</a></li>
                     <li class="navigation__link"><a href="#contacts">CONTACTS</a></li>
                 </ul>
             </nav>
         </div>
     </header>
-    <main>
-        <section class="hero" id="hero">
-            <div class="wrapper hero__wrapper">
-                <div class="hero__content">
-                    <p class="hero__caption caption">Marry Cristmas</p>
-                    <h1 class="hero__contain">GIFT YOURSELF THE MAGIC OF NEW POSSIBILITIES</h1>
-                    <a href="./gifts/index.html" class="button__magical-gifts action-small">Explore magical gifts</a>
-                    <p class="hero__caption caption">and Happy New Year</p>
-                </div>
-            </div>
-        </section>
-        <section class="about" id="about">
+    <main class="main__wrapper--garland">
+        <section class="gifts" id="gifts">
             <div class="wrapper">
-                <div class="about__wrapper">
-                    <div class="about__content">
-                        <p class="about__caption caption">About</p>
-                        <h2 class="about__name">UNLEASH YOUR INNER SUPERHERO!</h2>
-                        <p class="about__text">This New Year marks the beginning of your journey to inner harmony and new strengths. We offer unique gifts that will help you improve your life.</p>
-                    </div>
-                    <img src="./assets/img/santa.png" alt="santa at work" class="about__image">
+                <h1 class="title__contain">Achieve health, harmony, and inner strength</h1>
+                <div class="gifts__tags-place">
+                    <p class="action-small tag gifts__tag_selected">All</p>
+                    <p class="action-small tag gifts__tag_bordered">For work</p>
+                    <p class="action-small tag gifts__tag_bordered">For health</p>
+                    <p class="action-small tag gifts__tag_bordered">For harmony</p>
                 </div>
-            </div>
-        </section>
-        <section class="slider">
-            <div class="wrapper">
-                <p class="caption slider__caption">Become Happier!</p>
-                <h2 class="slider__name">IN THE NEW 2025</h2>
-                <div class="slider__place">
-                    <div id="slider-container" class="slides">
-                        <div class="slide slider-text slide1">Live</div>
-                        <div class="slide slider-image slide2"><img src="./assets/img/snowman.png" alt="There is a snowman"></div>
-                        <div class="slide slider-text slide3">Create</div>
-                        <div class="slide slider-image slide4"><img src="./assets/img/christmas-trees.png" alt="There are christmas-trees"></div>
-                        <div class="slide slider-text slide5">Love</div>
-                        <div class="slide slider-image slide6"><img src="./assets/img/christmas-tree-ball.png" alt="There is a christmas-tree-ball"></div>
-                        <div class="slide slider-text slide7">Dream</div>
-                        <div class="slide slider-image slide8"><img src="./assets/img/fairytale-house.png" alt="There is a fairytale-house"></div>
-                        <div class="slide slider-text slide5">Very</div>
-                        <div class="slide slider-image slide6"><img src="./assets/img/christmas-tree-ball.png" alt="There is a christmas-tree-ball"></div>
-                        <div class="slide slider-text slide7">Opposite</div>
-                        <div class="slide slider-image slide8"><img src="./assets/img/fairytale-house.png" alt="There is a fairytale-house"></div>
-                    </div>
-                </div>
-                <div class="buttons">
-                    <button type="button" class="slider__button move-back" id="btn-left">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M18.5 12H6M6 12L12 6M6 12L12 18" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>                        
-                        </svg>
-                    </button>
-                    <button type="button" class="slider__button move-ahead" id="btn-right">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M6 12H18.5M18.5 12L12.5 6M18.5 12L12.5 18" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                    </button>
-                </div>
-            </div>
-        </section>
-        <section class="best-gifts" id="best-gifts">
-            <div class="wrapper">
-                <p class="caption best-gifts__caption">Best Gifts</p>
-                <h2 class="best-gifts__name">ESPECIALLY FOR YOU</h2>
                 <div class="layout-4-columns">
                     <div class="gift tag-work">
                         <div class="gift__wrapper">
-                            <img src="./assets/img/gift-for-work.png" alt="" class="img-gifts">
+                            <img src="../assets/img/gift-for-work.png" alt="" class="img-gifts">
                             <div class="gift__content">
                                 <h4 class="gift__category">For Work</h4>
                                 <h3 class="gift__name">Console.log Guru</h3>
@@ -99,7 +48,7 @@
                     </div>
                     <div class="gift tag-health">
                         <div class="gift__wrapper">
-                            <img src="./assets/img/gift-for-health.png" alt="" class="img-gifts">
+                            <img src="../assets/img/gift-for-health.png" alt="" class="img-gifts">
                             <div class="gift__content">
                                 <h4 class="gift__category">For Health</h4>
                                 <h3 class="gift__name">Console.log Guru</h3>
@@ -108,7 +57,7 @@
                     </div>
                     <div class="gift tag-work">
                         <div class="gift__wrapper">
-                            <img src="./assets/img/gift-for-work.png" alt="" class="img-gifts">
+                            <img src="../assets/img/gift-for-work.png" alt="" class="img-gifts">
                             <div class="gift__content">
                                 <h4 class="gift__category">For Work</h4>
                                 <h3 class="gift__name">Console.log Guru</h3>
@@ -117,45 +66,10 @@
                     </div>
                     <div class="gift tag-harmony">
                         <div class="gift__wrapper">
-                            <img src="./assets/img/gift-for-harmony.png" alt="" class="img-gifts">
+                            <img src="../assets/img/gift-for-harmony.png" alt="" class="img-gifts">
                             <div class="gift__content">
                                 <h4 class="gift__category">For Harmony</h4>
                                 <h3 class="gift__name">Console.log Guru</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-        <section class="cta">
-            <div class="wrapper">
-                <div class="cta__content">
-                    <h2 class="cta__name">READY TO START YOUR JOURNEY TO A BETTER VERSION OF YOURSELF</h2>
-                    <a href="./gifts/index.html" class="button__magical-gifts action-small">Explore magical gifts</a>
-                    <p class="caption cta__caption">The New Year is Coming Soon...</p>
-                    <div class="timer">
-                        <div class="timer__wrapper">
-                            <div class="timer__content">
-                                <div id="days" class="timer-cell">
-                                    <h2 id="days__number" class="timer__number"></h2>
-                                    <h4 id="days__signatures" class="timer__signatures">Days</h4>
-                                </div>
-                                <div class="separator">|</div>
-                                <div id="hours" class="timer-cell">
-                                    <h2 id="hours__number" class="timer__number"></h2>
-                                    <h4 id="hours__signatures" class="timer__signatures">Hours</h4>
-                                </div>
-                                <div class="separator">|</div>
-                                <div id="minutes" class="timer-cell">
-                                    <h2 id="minutes__number" class="timer__number"></h2>
-                                    <h4 id="minutes__signatures" class="timer__signatures">Minutes</h4>
-                                </div>
-                                <div class="separator">|</div>
-                                <div id="seconds" class="timer-cell">
-                                    <h2 id="seconds__number" class="timer__number"></h2>
-                                    <h4 id="seconds__signatures" class="timer__signatures">Seconds</h4>
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -167,34 +81,34 @@
         <div class="wrapper footer__wrapper">
             <div class="footer__activity">
                 <a href="tel:+375 (29) 111-22-33" class="action-large footer__contact">
-                    <img src="./assets/svg/activity_santa-claus.svg" alt="santa claus icon" class="footer__activity-card">
+                    <img src="../assets/svg/activity_santa-claus.svg" alt="santa claus icon" class="footer__activity-card">
                     +375 (29) 111-22-33
                     <h3>Call us</h3>
                 </a>
                 <a href="https://maps.app.goo.gl/4Z8KibrLudVtp58x9" class="action-large footer__contact" target="_blank">
-                    <img src="./assets/svg/activity_christmas-tree.svg" alt="christmas tree icon" class="footer__activity-card">
+                    <img src="../assets/svg/activity_christmas-tree.svg" alt="christmas tree icon" class="footer__activity-card">
                     Magic forest
                     <h3>Meet us</h3>
                 </a>
                 <a href="mailto:gifts@magic.com" class="action-large footer__contact">
-                    <img src="./assets/svg/activity_snake.svg" alt="snake icon" class="footer__activity-card">
+                    <img src="../assets/svg/activity_snake.svg" alt="snake icon" class="footer__activity-card">
                     gifts@magic.com
                     <h3>Write us</h3>
                 </a>
             </div>
             <div class="social">
                 <div class="social__items">
-                    <a href="https://web.telegram.org" target="_blank" class="social__link"><object data="./assets/svg/sm_telegram.svg" type="image/svg+xml" class="social__object-svg"></object></a>
-                    <a href="https://www.facebook.com" target="_blank" class="social__link"><object data="./assets/svg/sm_facebook.svg" type="image/svg+xml" class="social__object-svg"></object></a>
-                    <a href="https://www.instagram.com" target="_blank" class="social__link"><object data="./assets/svg/sm_instagram.svg" type="image/svg+xml" class="social__object-svg"></object></a>
-                    <a href="https://x.com" target="_blank" class="social__link"><object data="./assets/svg/sm_X.svg" type="image/svg+xml" class="social__object-svg"></object></a>
+                    <a href="https://web.telegram.org" target="_blank" class="social__link"><object data="../assets/svg/sm_telegram.svg" type="image/svg+xml" class="social__object-svg"></object></a>
+                    <a href="https://www.facebook.com" target="_blank" class="social__link"><object data="../assets/svg/sm_facebook.svg" type="image/svg+xml" class="social__object-svg"></object></a>
+                    <a href="https://www.instagram.com" target="_blank" class="social__link"><object data="../assets/svg/sm_instagram.svg" type="image/svg+xml" class="social__object-svg"></object></a>
+                    <a href="https://x.com" target="_blank" class="social__link"><object data="../assets/svg/sm_X.svg" type="image/svg+xml" class="social__object-svg"></object></a>
                 </div>
             </div> 
             <div class="lisence">
                 <p class="lisence__copyright">Copyright 2025, All Rights Reserved</p>
                 <a href="https://rs.school/" target="_blank" class="lisence__caption caption">
                     Made in Rolling Scopes School
-                    <img src="./assets/svg/rs-school-logo.svg" class="rs-school-logo" alt="rs school logo" width="60" height="60">
+                    <img src="../assets/svg/rs-school-logo.svg" class="rs-school-logo" alt="rs school logo" width="60" height="60">
                 </a>
             </div>
         </div>
